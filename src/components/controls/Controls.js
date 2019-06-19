@@ -1,7 +1,15 @@
-import React from 'react';
+/**
+ * Dependencies
+ */
+
+import React from 'react'
+
+/**
+ * Define component
+ */
 
 const Controls = props => {
-  const { locked, closed, toggleLocked, toggleClosed } = props;
+  const { locked, closed, toggleLocked, toggleClosed } = props
 
   return (
     <div className="controls panel">
@@ -12,7 +20,11 @@ const Controls = props => {
         {closed ? 'Open Gate' : 'Close Gate'}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Controls;
+/**
+ * Export component
+ */
+
+export default Controls
