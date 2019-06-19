@@ -3,8 +3,14 @@
  */
 
 import React from 'react'
-import { render } from '@testing-library/react';
+import { render, fireEvent, cleanup } from '@testing-library/react'
 import Controls from './Controls'
+
+/**
+ * Hooks
+ */
+
+afterEach(cleanup)
 
 /**
  * Assertions
