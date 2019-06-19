@@ -21,6 +21,15 @@ describe('App.js', () => {
     render(<App />)
   })
 
+  test('it shows the controls and display', () => {
+    const { container } = render(<App />)
+    const controls = container.getElementsByClassName('controls')
+    const display = container.getElementsByClassName('display')
+
+    expect(controls.length).toBe(1)
+    expect(display.length).toBe(1)
+  })
+
   describe('<Display />', () => {
     test('it defaults to `unlocked` and `open`', () => {
       const { container, getByText } = render(<App />)
